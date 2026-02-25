@@ -58,6 +58,7 @@ nav a {
     padding: 15px 30px;
     color: white;
     text-decoration: none;
+    font-family: "Tomorrow", sans-serif;
 }
 
 nav a:hover {
