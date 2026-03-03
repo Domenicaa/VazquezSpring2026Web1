@@ -1,0 +1,83 @@
+/* html tag selector */
+body {
+    background-color: #daebdb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* id selector */
+#wrapper {
+    background-color: #687f69;
+    width: 70%;
+    margin: 0px auto;
+    /* top and bottom are no margin, left and rightare automatically equal */
+}
+
+/* grouping selector */
+h3, h4, h5 {
+    margin: 0px;
+}
+
+h1 {
+    color: #a2dba6;
+    font-family: "Doto", sans-serif;
+    font-size: 48px;
+}
+
+/* descendant selectors */
+header h2 {
+    color: #7ecc84;
+    font-family: "Micro 5", sans-serif;
+    font-size: 42px;
+}
+
+main h2 {
+    color: #265229;
+}
+
+main h3 {
+    margin-top: 30px;
+}
+
+main h4 {
+    font-size: 12px;
+}
+
+main a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* nav bar */
+nav {
+    background-color: #58735a;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    font-family: "Tomorrow", sans-serif;
+}
+
+nav a:hover {
+    background-color: #a2dba6;
+    color: #265229;
+}
+
+/* pseudo class selector */
+main a:hover {
+    color: #a2dba6;
+}
+
+/* START DOOTER STYLES */
+span.copyright {
+    color: #c8c8c8;
+}
+
+span.author {
+    color: #FFF;
+}
+/* END FOOTER STYLES */
