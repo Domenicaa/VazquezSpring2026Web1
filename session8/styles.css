@@ -1,0 +1,126 @@
+/* BEGIN border-box fix */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* END border-box fix */
+
+body{
+    /* remove marging and padding on body */
+    padding: 0;
+    margin: 0;
+    background-image: url("images/aw1.jpg");
+    background-size: cover;
+    
+}
+
+/* Grouping example */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  color: #7C142F;
+  justify-self: center;
+}
+h1{
+  justify-self: center;
+  color: #EDCDD1;
+}
+
+
+.wrapper{
+    background-color: #EDCDD1;
+    width: 80%;
+    margin: 0 auto;
+    /* creates 12 column layout */
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    display: grid;
+}
+
+/* padding on immediate children of wrapper */
+.wrapper> * {
+  padding: 20px;
+}
+
+header{
+    background-color: #7C142F;
+    /* the order, now its on top */
+    grid-column: 1 / 13;  
+}
+nav{
+  background-color: #958383;
+  grid-column: 1 / 4;
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column; */
+}
+nav a{
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color: #293B26;
+}
+nav a:hover {
+  color: #A89C31;
+}
+main {
+    background-color: #EFFFDE;
+    grid-column: 4 / 10;
+}
+main a{
+  text-decoration: none;
+  color: #CF3C61;
+}
+main a:hover {
+  color: #A89C31;
+}
+main p{
+  font-family: 'Raleway', sans-serif;
+  color: #293B26;
+}
+
+aside {
+    background-color: #958383;
+    grid-column: 10 / 13;
+}
+aside p {
+  font-family: 'Raleway', sans-serif;
+  color: #293B26;
+}
+
+/* span 2 rows */
+main,
+nav,
+aside {
+  grid-row: 2 / 4;
+}
+
+footer {
+    background-color: #96AC5D;
+    grid-column: 1 / 13;
+}
+/*styling a div block element box*/
+div.imageContainer {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* styling a img inline element box */
+div.imageContainer img {
+    width: 45%;
+    height: 200px;
+    border: 9px solid #7C142F;
+    margin: 20px;
+    
+
+}
