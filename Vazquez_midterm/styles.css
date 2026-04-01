@@ -1,0 +1,252 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body.index {
+  margin: 0;
+  padding: 0;
+  background-image: url("images/01.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+}
+
+.wrapper {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+header {
+  background-color: #4c5e11;
+  grid-column: 1 / 13;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  color: #f45f03;
+  text-decoration: none;
+  font-family: 'Bungee', cursive;
+  text-align: center;
+}
+
+nav {
+  background-color: #d5e3c5;
+  grid-column: 9 / 13;
+  padding: 40px;
+}
+
+nav a {
+  color: #0d0000;
+  text-decoration: none;
+  font-family: 'Exo 2', sans-serif;
+  padding: 10px 10px;
+
+
+}
+
+nav a:hover {
+  background-color: #efa87c;
+
+}
+
+main {
+  background-color: #EFFFDE;
+  grid-column: 1 / 9;
+  padding: 20px;
+}
+
+main h3 {
+  color: #583308;
+  text-decoration: none;
+  font-family: 'Exo 2', sans-serif;
+
+}
+
+main p {
+  color: #392c05;
+  text-decoration: none;
+  font-family: 'Exo 2', sans-serif;
+  line-height: 1.5;
+}
+
+footer {
+  background-color: #bed08e;
+  grid-column: 1 / 13;
+  padding: 10px 20px;
+}
+
+footer h2 {
+  color: #392c05
+}
+
+
+/* Motion Path */
+body.motion {
+  background-image: none;
+  background-color: #ffc0cb;
+}
+
+/* red circles */
+.topRow {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 300px;
+}
+
+/* pink circles */
+.bottomRow {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 400px;
+}
+
+.topBox {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  position: relative;
+  animation: moveDown 4s infinite alternate;
+}
+
+.bottomBox {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #f7065e;
+  position: relative;
+  animation: moveUp 4s infinite alternate;
+}
+
+@keyframes moveDown {
+  from {
+    top: 0px;
+  }
+
+  to {
+    top: 600px;
+  }
+}
+
+@keyframes moveUp {
+  from {
+    top: 400px;
+  }
+
+  to {
+    top: -200px;
+  }
+}
+
+/* Color Change */
+body.colorChange {
+  background-image: none;
+  width: max-content;
+  height: max-content;
+  background-color: red;
+  animation-name: change;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes change {
+  0% {
+    background-color: red;
+  }
+
+  25% {
+    background-color: yellow;
+  }
+
+  50% {
+    background-color: blue;
+  }
+
+  75% {
+    background-color: red;
+  }
+
+  100% {
+    background-color: yellow;
+  }
+}
+
+.oval {
+  width: 800px;
+  height: 500px;
+  border-radius: 100%;
+  background-color: yellow;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: ovalChange;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ovalChange {
+  0% {
+    background-color: yellow;
+  }
+
+  25% {
+    background-color: red;
+  }
+
+  50% {
+    background-color: blue;
+  }
+
+  75% {
+    background-color: yellow;
+  }
+
+  100% {
+    background-color: red;
+  }
+}
+
+/* Rotate */
+
+body.rotate {
+  background-image: none;
+  background-color: #808000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 800px;
+
+}
+
+.square {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: #ec7e23;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bitcount Grid Single Ink', cursive;
+  font-size: 30px;
+  transition: transform 5s;
+}
+
+.square:hover {
+  transform: rotateX(360deg);
+}
