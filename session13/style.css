@@ -1,0 +1,96 @@
+.slide{
+  font-size: 26px;
+  color: #421e03;
+  display: none;
+}
+
+.active{
+  font-family: 'Arvo', serif;
+  color: #421e03;
+  text-align: center;
+  display: block;
+}
+body{
+  background-color: #edf2bb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+
+  margin: 0;
+}
+
+.container{
+  text-align: center;
+}
+
+.buttonContainer{
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+button{
+  background-color: #7a4e2d;
+  color: #ffffff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+
+}
+
+button:hover{
+  background-color: #a66a3f;
+}
+
+.theme{
+  width: 250px;
+  height: 200px;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.palette{
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;  
+  margin: 10px;
+}
+
+.montserrat{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.raleway{
+  font-family: 'Raleway', sans-serif;
+}
+
+.dmsans{
+  font-family: 'DM Sans', sans-serif;
+}
+
+.roboto{
+  font-family: 'Roboto Slab', serif;
+}
+
+.lora{
+  font-family: 'Lora', serif;
+}
+
+.diplomata{
+  font-family: 'Diplomata', cursive;
+}
+
+.arvo{
+  font-family: 'Arvo', serif;
+}
+
+.cinzel{
+  font-family: 'Cinzel', serif;
+}
