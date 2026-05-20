@@ -1,0 +1,405 @@
+html {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* index.html */
+
+.home-page{
+    background-image: url("images/bg1.jpg");
+    background-size: cover;
+}
+.container img{
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+.container img:hover{
+    transform: scale(1.05);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 60px auto;
+}
+.container header {
+    order: 1;
+    flex: 1 0 100%; 
+    padding: 15px;
+    color: #74342b;
+    font-family: "Castoro Titling", serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+.container nav {
+    background-color: #733c0d;
+    order: 2;
+    flex: 1 0 100%; 
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.container nav a {
+    text-decoration: none;
+    color: #f9f1f1;
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+}
+.container nav a:hover {
+    color: #f9f1f1;
+    font-weight: bold;
+    font-size: 25px;
+}
+.container main {
+    order: 3;
+    flex: 1 0 50px; 
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.container section {
+    order: 4;
+    flex: 1 0 50px; 
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    color: #422007;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+.container footer {
+    order: 5;
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Raleway", sans-serif;
+    color: #74342b;
+}
+/* painting1.html */
+.arnolfini-page{
+    background-color: #effcf2dd;
+}
+.container1 img{
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+.container1 img:hover{
+    transform: scale(1.05);
+}
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 60px auto;
+}
+.container1 header {
+    order: 1;
+    flex: 1 0 100%; 
+    color: #03113d;
+    font-family: "Castoro Titling", serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+.container1 nav {
+    order: 2;
+    flex: 1 0 100%; 
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.container1 nav a {
+    text-decoration: none;
+    color: #584603;
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+}
+.container1 nav a:hover {
+    color: #365a0a;
+    font-weight: bold;
+    font-size: 25px;
+}
+.container1 main {
+    order: 3;
+    flex: 1 0 100%; 
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.container1 section {
+    order: 4;
+    flex: 1 0 100%; 
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    color: #422007;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+.container1 aside {
+    background-color: #9eb3e9b3;
+    border-radius: 20px;
+    order: 4;
+    flex: 1 0 100%;
+    font-family: "Montserrat", sans-serif;
+    color: #03113d;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.5;
+}
+.container1 aside a {
+    text-decoration: none;
+    color: #0b0639;
+}
+.container1 aside a:hover {
+    color: #365a0a;
+    font-size: 30px;
+}
+.container1 article {
+    order: 4;
+    flex: 1 0 100%;
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    color: #422007;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+    
+}
+.container1 footer {
+    order: 5;
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Raleway", sans-serif;
+    color: #03113d;
+}
+
+/* painting2.html */
+
+.venus-page{
+    background-color: #f7f6f1dd;
+}
+
+.container2 img{
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.container2 img:hover{
+    transform: scale(1.05);
+}
+
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 60px auto;
+}
+
+.container2 header {
+    order: 1;
+    flex: 1 0 100%; 
+    color: #7d0404;
+    font-family: "Castoro Titling", serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+
+}
+.container2 nav {
+    order: 2;
+    flex: 1 0 100%; 
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.container2 nav a {
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    color: #880430;
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+}
+.container2 nav a:hover {
+    color: #a3053a;
+    font-weight: bold;
+    font-size: 25px;
+}
+.container2 main {
+    order: 3;
+    flex: 1 0 100%; 
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.container2 section {
+    order: 4;
+    flex: 1 0 100%; 
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    color: #470228;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+.container2 article {
+    order: 4;
+    flex: 1 0 100%;
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    color: #470228;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.container2 aside {
+    background-color: #f6e7f4dd;
+    border-radius: 20px;
+    order: 4;
+    flex: 1 0 100%;
+    font-family: "Montserrat", sans-serif; 
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+.container2 aside a {
+    text-decoration: none;
+    color: #750202;
+}
+.container2 aside a:hover {
+    color: #b70a43;
+    font-size: 30px;
+}
+.container2 footer {
+    order: 5;
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Raleway", sans-serif;
+    color: #7d0416;
+}
+
+/* painting3.html */
+
+.altarpiece-page{
+    background-color: #d1c0ad7b;
+}
+.container3 img{
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+.container3 img:hover{
+    transform: scale(1.05);
+}
+.container3{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 60px auto;
+}
+
+.container3 header {
+    order: 1;
+    flex: 1 0 100%; 
+    color: #654508;
+    font-family: "Castoro Titling", serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+.container3 nav {
+    order: 2;
+    flex: 1 0 100%; 
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.container3 nav a {
+    text-decoration: none;
+    color: #724507;
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+}
+.container3 nav a:hover {
+    color: #dd6b08;
+    font-weight: bold;
+    font-size: 25px;
+}
+.container3 main {
+    order: 3;
+    flex: 1 0 100%; 
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container3 section {
+    order: 4;
+    flex: 1 0 100%; 
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    color: #422007;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.container3 article {
+    order: 4;
+    flex: 1 0 100%;
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    color: #422007;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5; 
+}
+
+.container3 aside {
+    background-color: #e7c2a2;
+    border-radius: 20px;
+    order: 4;
+    flex: 1 0 100%;
+    padding: 1px;
+    font-family: "Montserrat", sans-serif;
+    color: #422007;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.5;
+}
+.container3 aside a {
+    text-decoration: none;
+    color: #5b3c0b;
+}
+.container3 aside a:hover {
+    color: #dd6b08;;
+    font-size: 30px;
+}
+
+.container3 footer {
+    order: 5;
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: center;
+    color: #654508;
+    font-family: "Raleway", sans-serif;
+}
+
